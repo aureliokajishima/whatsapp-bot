@@ -17,7 +17,7 @@ def whatsapp_webhook():
     # Gera a resposta com o ChatGPT
     try:
         completion = client_openai.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "Você é um assistente simpático e direto, estilo Alexa."},
                 {"role": "user", "content": mensagem_usuario}
